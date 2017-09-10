@@ -77,7 +77,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually (m
 
 ####4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road, and augmentation by flipping the images horizontally. 
 
 For details about how I created the training data, see the next section. 
 
@@ -85,7 +85,7 @@ For details about how I created the training data, see the next section.
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to ...
+The overall strategy for deriving a model architecture was to increase its generalization performance by optimizing its performance on training and validation data. 
 
 My first step was to use a neural network with one hidden (dense) layer of 80 neurons to get a feel of how a very simple model perform on this data.
 
