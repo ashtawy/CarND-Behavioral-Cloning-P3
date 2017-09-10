@@ -57,13 +57,13 @@ The model.py file contains the code for training and saving the convolution neur
 
 My model consists of a convolution neural network with 5x5 filter sizes and depths between 32 and 128  
 The architecture of my model is as follows (model.py lines 47-54):
-#1.1. A convolutional layer with 6 5X5 filters and a ReLU activation function
-#1.2  A Max pooling layer of size 2X2
-#1.3. A convolutional layer with 6 5X5 filters and a ReLU activation function
-#1.4  A Max pooling layer of size 2X2
-#1.5  A dense layer with 120 neurons and a ReLU activation function
-#1.6  A dense layer with 84 neurons and a ReLU activation function
-#1.7  An ourput layer
+* A convolutional layer with 6 5X5 filters and a ReLU activation function
+* A Max pooling layer of size 2X2
+* A convolutional layer with 6 5X5 filters and a ReLU activation function
+* A Max pooling layer of size 2X2
+* A dense layer with 120 neurons and a ReLU activation function
+* A dense layer with 84 neurons and a ReLU activation function
+* An ourput layer
 
 The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer (code line 45). 
 
@@ -110,12 +110,12 @@ The final architecture is to use a convolution neural network model similar to L
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
 ![alt text][center_driving.png]
+<p align="center"> <img src="./center_driving.png"> </p>
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to stay in the center of the lane at curved roads. These images show what a recovery looks like:
 
-![alt text][left_recovery.png]
-![alt text][right_recovery.png]
-
+<p align="center"> <img src="./left_recovery.png"> </p>
+<p align="center"> <img src="./right_recovery.png"> </p>
 
 To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
 
