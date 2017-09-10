@@ -120,7 +120,7 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 
 In addition to the images from the center camera, I also used the images from the left and right cameras to augment the data. I corrected the steering angle with a correction factor of -0.2 and 0.2 for left and right perspectives, respectively. 
 
-After the collection process, I had 32144 number of data points. I then preprocessed this data by cropping the top 75 and bottom 25 pixels to remove the background artifacts such as trees and the hood of the car.
+After the collection process, I had 32144 data points. I then preprocessed this data by cropping the top 75 and bottom 25 pixels to remove the background artifacts such as trees and the hood of the car.
 
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
