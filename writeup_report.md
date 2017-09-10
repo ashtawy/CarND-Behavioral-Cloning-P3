@@ -112,19 +112,19 @@ To capture good driving behavior, I first recorded two laps on track one using c
 ![alt text][center_driving.png]
 <p align="center"> <img src="./center_driving.png"> </p>
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to stay in the center of the lane at curved roads. These images show what a recovery looks like:
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to stay in the center of the lane in curved roads. These images show what a recovery looks like:
 
 <p align="center"> <img src="./left_recovery.png"> </p>
 <p align="center"> <img src="./right_recovery.png"> </p>
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would remove the bias due to the curves are always to one side (e.g., right). For example, here is an image that has then been flipped:
 
-![alt text][image6]
-![alt text][image7]
+<p align="center"> <img src="./before_flipping.png"> </p>
+<p align="center"> <img src="./after_flipping.png"> </p>
 
-Etc ....
+In addition to the images from the center camera, I also used the images from the left and right cameras to augment the data. I corrected the steering angle with a correction factor of -0.2 and 0.2 for left and right perspectives, respectively. 
 
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+After the collection process, I had 32144 number of data points. I then preprocessed this data by cropping the top 75 and bottom 25 pixels to remove the background artifacts such as trees and the hood of the car.
 
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
