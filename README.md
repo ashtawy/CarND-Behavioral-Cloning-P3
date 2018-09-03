@@ -1,5 +1,5 @@
 # CarND-Behavioral-Cloning
-#**Behavioral Cloning** 
+**Behavioral Cloning** 
 
 ---
 
@@ -31,7 +31,7 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md or writeup_report.pdf summarizing the results
 
-####2. Submission includes functional code
+#### 2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
 python drive.py model.h5
@@ -39,9 +39,9 @@ python drive.py model.h5
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. An appropriate model architecture has been employed
 
 My model consists of a convolution neural network with 5x5 filter sizes and depths between 32 and 128  
 The architecture of my model is as follows (model.py lines 47-54):
@@ -55,23 +55,23 @@ The architecture of my model is as follows (model.py lines 47-54):
 
 The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer (code line 45). 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 75). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 56).
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road, and augmentation by flipping the images horizontally. 
 
 For details about how I created the training data, see the next section. 
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to increase its generalization performance by optimizing its performance on training and validation data. 
 
@@ -85,12 +85,12 @@ Then I retrained and validated it the model on random 80 & 20% parts of the orig
 
 The final step was to run the simulator to see how well the car was driving around track one. There was only one spot where the vehicle almost touched the left mark of the lane, but it came back to the center of the lane. 
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final architecture is to use a convolution neural network model similar to LeNet. I thought this model might be appropriate because it can handle visual data well.
 
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
